@@ -64,6 +64,7 @@ public class OperatorClass {
         int numberOutput=tNumber1>tNumber2? 10 : 20;
         System.out.println(output);
         System.out.println(numberOutput);
+        
 
     }
             
