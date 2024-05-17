@@ -78,6 +78,6 @@ public class StaticFunction {
         System.out.println(returnFromString);
 
         String returnfromString2=eligibleTest(10,"kia");
-        System.out.println(returnfromString2);
+        System.out.println(returnfromString2) ;
     }
 }
