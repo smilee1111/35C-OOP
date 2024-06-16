@@ -10,7 +10,7 @@ public class AccessModifier {
     //  ae.accessPrivate();
     //  System.out.println(ae.getphno());
      //ae.privateFunction();//
-      Dog d=new Dog();
+      DogAccess d=new DogAccess();
       d.age=10;
       d.setName("Max");
       d.setBreed("Pug");
@@ -21,19 +21,19 @@ public class AccessModifier {
     
 }
 //Task
-//Make a class dog
+//Make a class dogAccess
 //make 2 private attribute, name and breed
 //make 1 public attribute age,
 //make setter for name and breed
 //make getter for name and breed
-//make 1 object for Dog
+//make 1 object for DogAccess
 //fill all the attribute 
 //print the following from object
 //name:xyz
 //breed:abc
 //age=10
 
-class Dog{
+class DogAccess{
     private String name;
     private String breed;
     public int age;
