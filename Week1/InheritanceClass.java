@@ -101,3 +101,4 @@ class Ambhibian extends Reptile{
         System.out.println("inside Amphibian:"+scale);
     }
 }
+
