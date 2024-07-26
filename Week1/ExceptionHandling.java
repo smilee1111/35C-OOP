@@ -1,4 +1,4 @@
-
+import java.util.Scanner;
 public class ExceptionHandling {
    
         // int num1=10;
@@ -87,6 +87,39 @@ public class ExceptionHandling {
             }finally{
                 System.out.println("array index was too much");
             }
+         
+
 
         }
 }
+// import java.util.Scanner;
+
+// public class StringLengthChecker {
+
+//     public static void main(String[] args) {
+//         try {
+//             String input = getUserInput();
+//             System.out.println("You entered: " + input);
+//         } catch (InvalidStringLengthException e) {
+//             System.out.println("Error: " + e.getMessage());
+//         }
+//     }
+
+//     public static String getUserInput() throws InvalidStringLengthException {
+//         Scanner scanner = new Scanner(System.in);
+//         System.out.print("Enter a string (between 5 and 20 characters): ");
+//         String input = scanner.nextLine();
+
+//         if (input.length() < 5 || input.length() > 20) {
+//             throw new InvalidStringLengthException("String length must be between 5 and 20 characters.");
+//         }
+
+//         return input;
+//     }
+
+//     public static class InvalidStringLengthException extends Exception {
+//         public InvalidStringLengthException(String message) {
+//             super(message);
+//         }
+//     }
+// }

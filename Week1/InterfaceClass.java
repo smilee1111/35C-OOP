@@ -93,18 +93,18 @@ class Cow implements AnimalDo{
  * 
  * Make a class Spotify and implement DigitalMedia and OnlineAsset
  */ 
-interface Media{
-    public void play();
-    public void pause();
-    public void next();
-    public void previous();
-    public String nowPlaying();
-}
+// interface Media{
+//     public void play();
+//     public void pause();
+//     public void next();
+//     public void previous();
+//     public String nowPlaying();
+// }
 
-interface DigitalMedia extends Media{
-    public double size();
-    public double remaining();
-    public double current();
+// interface DigitalMedia extends Media{
+//     public double size();
+//     public double remaining();
+//     public double current();
     
-}
-interface OnlineAssist
+// }
+// interface OnlineAssist

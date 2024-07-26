@@ -10,11 +10,45 @@ public class BankingSystem {
     System.out.println(bs.getAccountPrice());
     }
 }
-
+interface Transaction{
+    public double getAmount();
+    public boolean isValid();
+}
+class DepositTransaction implements Transaction{
+    @Override
+    public double getAmount(){
+        BankAccount ba=new BankAccount("1001","Muskan",10);
+        return ba.Transac;
+    }
+    public boolean isValid(){
+        BankAccount ba=new BankAccount("1001","Muskan",10);
+        boolean p=true;
+        if(ba.Transac>100000){
+            p=false;
+        }
+        return p;
+    }
+}
+class WithdrawTransaction implements Transaction{
+    @Override
+    public double getAmount(){
+        BankAccount ba=new BankAccount("1001","Muskan",10);
+        return ba.Transac;
+    }
+    public boolean isValid(){
+        BankAccount ba=new BankAccount("1001","Muskan",10);
+        boolean p=true;
+        if(ba.Transac>100000){
+            p=false;
+        }
+        return p;
+    }
+}
 class BankAccount{
     private String accountNumber;
     private String accountHolderName;
     private double accountPrice;
+    public double Transac;
     public String getAccountNumber(){
         return this.accountNumber;
     }
@@ -33,12 +67,14 @@ class BankAccount{
     }
     public void deposit(double money){
         this.accountPrice+=money;
+        Transac+=money;
     }
     public void withdraw(double money){
         if(money>accountPrice){
             System.out.println("You are poor");
         }else{
             accountPrice-=money;
+            Transac+=money;
         }
 
     }
